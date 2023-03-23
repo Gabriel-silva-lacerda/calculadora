@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calc</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <div id="calc">
+      <h3><span class="material-symbols-outlined">
+        calculate
+        </span>Calculadora</h3>
+      <div id="operations">
+        <div class="current-operation" id="current-operation"></div>
+      </div>
+      <div id="buttons-container">
+        <button class="delete" onclick="clean()">DEL</button>
+        <button id="delete"onclick="cleanOne()">
+            <span class="material-symbols-outlined">backspace</span>
+        </button>
+        <button class="division"onclick="place('/')">/</button>
+        <button class="number" onclick="place('7')">7</button>
+        <button class="number" onclick="place('8')">8</button>
+        <button class="number" onclick="place('9')">9</button>
+        <button onclick="place('*')">X</button>
+        <button class="number" onclick="place('4')">4</button>
+        <button class="number" onclick="place('5')">5</button>
+        <button class="number" onclick="place('6')">6</button>
+        <button onclick="place('-')">-</button>
+        <button class="number" onclick="place('1')">1</button>
+        <button class="number" onclick="place('2')">2</button>
+        <button class="number" onclick="place('3')">3</button>
+        <button onclick="place('+')">+</button>
+        <button id="number" class="number" onclick="place('0')">0</button>
+        <button class="number" onclick="place('.')">.</button>
+        <button id="equal-btn" onclick="calc()">=</button>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
